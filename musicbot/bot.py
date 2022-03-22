@@ -1352,9 +1352,9 @@ class MusicBot(discord.Client):
         """Provides a basic template for embeds"""
         e = discord.Embed()
         e.colour = 7506394
-        e.set_footer(
-            text=self.config.footer_text, icon_url=self.config.footer_url
-        )
+#         e.set_footer(
+#             text=self.config.footer_text, icon_url=self.config.footer_url
+#         )
         e.set_author(
             name=self.user.name,
             url="https://github.com/kintama48",
