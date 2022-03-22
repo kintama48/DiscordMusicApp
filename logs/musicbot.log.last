@@ -1,0 +1,61 @@
+[118.423938751] 2022-03-21 18:02:53,981 - INFO - launcher: Starting sanity checks
+[119.531154633] 2022-03-21 18:02:53,982 - INFO - launcher: Checking for Python 3.8+
+[123.131990433] 2022-03-21 18:02:53,985 - INFO - launcher: Checking console encoding
+[126.701116562] 2022-03-21 18:02:53,989 - INFO - launcher: Setting console encoding to UTF-8
+[128.457784653] 2022-03-21 18:02:53,991 - INFO - launcher: Ensuring we're in the right environment
+[219.549894333] 2022-03-21 18:02:54,082 - INFO - launcher: Adding local bins/ folder to path
+[6426.161766052] 2022-03-21 18:03:00,288 - INFO - launcher: Required checks passed.
+[6457.077503204] 2022-03-21 18:03:00,319 - INFO - launcher: Optional checks passed.
+
+######################### PRE-RUN SANITY CHECKS PASSED #########################
+
+[20.1559059619903564] 2022-03-21 18:03:14,018 - WARNING - musicbot.config | In config.py::MainThread(19772), line 415 in find_config: Options file not found, copying example_options.ini
+[20.2056052684783936] 2022-03-21 18:03:14,068 - WARNING - musicbot.config | In config.py::MainThread(19772), line 235 in run_checks: i18n file does not exist. Trying to fallback to config/i18n/en.json.
+[20.3392357826232910] 2022-03-21 18:03:14,201 - INFO - musicbot.config | In config.py::MainThread(19772), line 250 in run_checks: Using i18n: config/i18n/en.json
+[20.3392357826232910] 2022-03-21 18:03:14,201 - WARNING - musicbot.config | In config.py::MainThread(19772), line 370 in create_empty_file_ifnoexist: Creating config/blacklist.txt
+[20.3392357826232910] 2022-03-21 18:03:14,201 - WARNING - musicbot.config | In config.py::MainThread(19772), line 370 in create_empty_file_ifnoexist: Creating config/whitelist.txt
+[20.4277184009552002] 2022-03-21 18:03:14,290 - DEBUG - musicbot.config | In config.py::MainThread(19772), line 461 in find_autoplaylist: Copying _autoplaylist.txt to autoplaylist.txt
+[20.4277184009552002] 2022-03-21 18:03:14,290 - DEBUG - musicbot.bot | In bot.py::MainThread(19772), line 281 in _setup_logging: Set logging level to INFO
+[20.4277184009552002] 2022-03-21 18:03:14,290 - INFO - musicbot.permissions | In permissions.py::MainThread(19772), line 68 in __init__: Permissions file not found, copying example_permissions.ini
+[20.4556641578674316] 2022-03-21 18:03:14,318 - DEBUG - musicbot.json | In json.py::MainThread(19772), line 9 in __init__: Init JSON obj with config/i18n/en.json
+[20.4769525527954102] 2022-03-21 18:03:14,339 - WARNING - musicbot.aliases | In aliases.py::MainThread(19772), line 22 in __init__: Aliases file not found, copying example_aliases.json
+[20.9724521636962891] 2022-03-21 18:03:14,835 - INFO - musicbot.bot | In bot.py::MainThread(19772), line 105 in __init__: Starting MusicBot release-151221-1-g1df26df
+[20.9724521636962891] 2022-03-21 18:03:14,835 - INFO - musicbot.bot | In bot.py::MainThread(19772), line 111 in __init__: Loaded autoplaylist with 2531 entries
+[22.0083513259887695] 2022-03-21 18:03:15,871 - DEBUG - musicbot.spotify | In spotify.py::MainThread(19772), line 100 in get_token: Created a new access token: {'access_token': 'BQBZPPJ01m8aeGC_JAc-V3wK6DDwdvGpJnnqGnLdtjZ-lscq-yHp5WQTm3dHxq9jdQe1yWMnvqdnW93eO3c', 'token_type': 'Bearer', 'expires_in': 3600, 'expires_at': 1647871395}
+[22.0083513259887695] 2022-03-21 18:03:15,871 - INFO - musicbot.bot | In bot.py::MainThread(19772), line 145 in __init__: Authenticated with Spotify successfully using client ID and secret.
+[24.3105342388153076] 2022-03-21 18:03:18,173 - ERROR - musicbot.bot | In bot.py::MainThread(19772), line 1084 in run: Error in cleanup
+Traceback (most recent call last):
+  File "E:\discord bot\music-bot\MusicBot\musicbot\bot.py", line 1070, in run
+    self.loop.run_until_complete(self.start(*self.config.auth))
+  File "C:\Users\Baig\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 642, in run_until_complete
+    return future.result()
+  File "E:\discord bot\music-bot\MusicBot\venv\lib\site-packages\discord\client.py", line 666, in start
+    await self.connect(reconnect=reconnect)
+  File "E:\discord bot\music-bot\MusicBot\venv\lib\site-packages\discord\client.py", line 601, in connect
+    raise PrivilegedIntentsRequired(exc.shard_id) from None
+discord.errors.PrivilegedIntentsRequired: Shard ID None is requesting privileged intents that have not been explicitly enabled in the developer portal. It is recommended to go to https://discord.com/developers/applications/ and explicitly enable the privileged intents within your application's page. If this is not possible, then consider disabling the privileged intents instead.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "E:\discord bot\music-bot\MusicBot\musicbot\bot.py", line 1082, in run
+    self._cleanup()
+  File "E:\discord bot\music-bot\MusicBot\musicbot\bot.py", line 1057, in _cleanup
+    pending = asyncio.all_tasks()
+  File "C:\Users\Baig\AppData\Local\Programs\Python\Python39\lib\asyncio\tasks.py", line 44, in all_tasks
+    loop = events.get_running_loop()
+RuntimeError: no running event loop
+[24.422044992] launcher-ERROR: Error starting bot
+Traceback (most recent call last):
+  File "E:\discord bot\music-bot\MusicBot\run.py", line 416, in main
+    m.run()
+  File "E:\discord bot\music-bot\MusicBot\musicbot\bot.py", line 1070, in run
+    self.loop.run_until_complete(self.start(*self.config.auth))
+  File "C:\Users\Baig\AppData\Local\Programs\Python\Python39\lib\asyncio\base_events.py", line 642, in run_until_complete
+    return future.result()
+  File "E:\discord bot\music-bot\MusicBot\venv\lib\site-packages\discord\client.py", line 666, in start
+    await self.connect(reconnect=reconnect)
+  File "E:\discord bot\music-bot\MusicBot\venv\lib\site-packages\discord\client.py", line 601, in connect
+    raise PrivilegedIntentsRequired(exc.shard_id) from None
+discord.errors.PrivilegedIntentsRequired: Shard ID None is requesting privileged intents that have not been explicitly enabled in the developer portal. It is recommended to go to https://discord.com/developers/applications/ and explicitly enable the privileged intents within your application's page. If this is not possible, then consider disabling the privileged intents instead.
+[24.422044992] launcher-INFO: All done.
