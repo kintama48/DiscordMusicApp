@@ -1,44 +1,58 @@
-[141.533851624] 2022-03-22 20:32:50,477 - INFO - launcher: Starting sanity checks
-[141.533851624] 2022-03-22 20:32:50,477 - INFO - launcher: Checking for Python 3.8+
-[142.533779144] 2022-03-22 20:32:50,478 - INFO - launcher: Checking console encoding
-[146.525382996] 2022-03-22 20:32:50,482 - INFO - launcher: Setting console encoding to UTF-8
-[146.525382996] 2022-03-22 20:32:50,482 - INFO - launcher: Ensuring we're in the right environment
-[148.515462875] 2022-03-22 20:32:50,484 - INFO - launcher: Adding local bins/ folder to path
-[4730.909347534] 2022-03-22 20:32:55,066 - INFO - launcher: Required checks passed.
-[4764.591693878] 2022-03-22 20:32:55,100 - INFO - launcher: Optional checks passed.
-[4764.591693878] 2022-03-22 20:32:55,100 - INFO - launcher: Moving old musicbot log
+[35.723209381] 2022-03-22 22:12:40,509 - INFO - launcher: Starting sanity checks
+[36.720275879] 2022-03-22 22:12:40,510 - INFO - launcher: Checking for Python 3.8+
+[38.848876953] 2022-03-22 22:12:40,512 - INFO - launcher: Checking console encoding
+[39.793014526] 2022-03-22 22:12:40,513 - INFO - launcher: Setting console encoding to UTF-8
+[40.709257126] 2022-03-22 22:12:40,514 - INFO - launcher: Ensuring we're in the right environment
+[42.704105377] 2022-03-22 22:12:40,516 - INFO - launcher: Adding local bins/ folder to path
+[387.928724289] 2022-03-22 22:12:40,861 - INFO - launcher: Required checks passed.
+[424.481868744] 2022-03-22 22:12:40,897 - INFO - launcher: Optional checks passed.
+[424.481868744] 2022-03-22 22:12:40,897 - INFO - launcher: Moving old musicbot log
 
 ######################### PRE-RUN SANITY CHECKS PASSED #########################
 
-[10.8808383941650391] 2022-03-22 20:33:01,216 - WARNING - musicbot.config | In config.py::MainThread(19360), line 235 in run_checks: i18n file does not exist. Trying to fallback to config/i18n/en.json.
-[10.8808383941650391] 2022-03-22 20:33:01,216 - INFO - musicbot.config | In config.py::MainThread(19360), line 250 in run_checks: Using i18n: config/i18n/en.json
-[10.9477229118347168] 2022-03-22 20:33:01,283 - DEBUG - musicbot.bot | In bot.py::MainThread(19360), line 281 in _setup_logging: Set logging level to INFO
-[10.9900817871093750] 2022-03-22 20:33:01,325 - DEBUG - musicbot.json | In json.py::MainThread(19360), line 9 in __init__: Init JSON obj with config/i18n/en.json
-[11.7639923095703125] 2022-03-22 20:33:02,099 - INFO - musicbot.bot | In bot.py::MainThread(19360), line 105 in __init__: Starting MusicBot release-151221-1-g1df26df
-[11.7639923095703125] 2022-03-22 20:33:02,099 - INFO - musicbot.bot | In bot.py::MainThread(19360), line 111 in __init__: Loaded autoplaylist with 2531 entries
-[13.0639023780822754] 2022-03-22 20:33:03,399 - DEBUG - musicbot.spotify | In spotify.py::MainThread(19360), line 100 in get_token: Created a new access token: {'access_token': 'BQDq3v64WMJZ74VAZQ3CCKsYZw_8CTmNXqh98bQcG1BNwk83QpEa04Kk8IWhrtmicGWwaLwHJjXzsVuyx1w', 'token_type': 'Bearer', 'expires_in': 3600, 'expires_at': 1647966783}
-[13.0639023780822754] 2022-03-22 20:33:03,399 - INFO - musicbot.bot | In bot.py::MainThread(19360), line 145 in __init__: Authenticated with Spotify successfully using client ID and secret.
-[17.1128349304199219] 2022-03-22 20:33:07,448 - DEBUG - musicbot.bot | In bot.py::MainThread(19360), line 1119 in on_ready: Connection established, ready to go.
-[17.1128349304199219] 2022-03-22 20:33:07,448 - DEBUG - musicbot.bot | In bot.py::MainThread(19360), line 430 in _cache_app_info: Caching app info
-[17.4303448200225830] 2022-03-22 20:33:07,766 - DEBUG - musicbot.bot | In bot.py::MainThread(19360), line 924 in _scheck_ensure_env: Ensuring data folders exist
-[17.4471249580383301] 2022-03-22 20:33:07,782 - DEBUG - musicbot.bot | In bot.py::MainThread(19360), line 939 in _scheck_server_permissions: Checking server permissions
-[17.4471249580383301] 2022-03-22 20:33:07,782 - DEBUG - musicbot.bot | In bot.py::MainThread(19360), line 943 in _scheck_autoplaylist: Auditing autoplaylist
-[17.4471249580383301] 2022-03-22 20:33:07,782 - DEBUG - musicbot.bot | In bot.py::MainThread(19360), line 947 in _scheck_configs: Validating config
-[17.4471249580383301] 2022-03-22 20:33:07,782 - DEBUG - musicbot.config | In config.py::MainThread(19360), line 376 in async_validate: Validating options...
-[17.4471249580383301] 2022-03-22 20:33:07,782 - DEBUG - musicbot.config | In config.py::MainThread(19360), line 388 in async_validate: Acquired owner id via API
-[17.4471249580383301] 2022-03-22 20:33:07,782 - DEBUG - musicbot.bot | In bot.py::MainThread(19360), line 950 in _scheck_configs: Validating permissions config
-[17.4471249580383301] 2022-03-22 20:33:07,782 - DEBUG - musicbot.permissions | In permissions.py::MainThread(19360), line 112 in async_validate: Validating permissions...
-[17.4471249580383301] 2022-03-22 20:33:07,782 - DEBUG - musicbot.permissions | In permissions.py::MainThread(19360), line 116 in async_validate: Fixing automatic owner group
-[17.4471249580383301] 2022-03-22 20:33:07,782 - INFO - musicbot.bot | In bot.py::MainThread(19360), line 1133 in on_ready: Connected: 883403929113731072/BaguzelMusicBot#2949
-[17.4471249580383301] 2022-03-22 20:33:07,782 - INFO - musicbot.bot | In bot.py::MainThread(19360), line 1141 in on_ready: Owner:     743373378672656445/kintama#8473
+[0.8071730136871338] 2022-03-22 22:12:41,280 - WARNING - musicbot.config | In config.py::MainThread(16064), line 235 in run_checks: i18n file does not exist. Trying to fallback to config/i18n/en.json.
+[0.8081729412078857] 2022-03-22 22:12:41,281 - INFO - musicbot.config | In config.py::MainThread(16064), line 250 in run_checks: Using i18n: config/i18n/en.json
+[0.8088612556457520] 2022-03-22 22:12:41,282 - DEBUG - musicbot.bot | In bot.py::MainThread(16064), line 281 in _setup_logging: Set logging level to INFO
+[0.8108861446380615] 2022-03-22 22:12:41,284 - DEBUG - musicbot.json | In json.py::MainThread(16064), line 9 in __init__: Init JSON obj with config/i18n/en.json
+[0.9668998718261719] 2022-03-22 22:12:41,440 - INFO - musicbot.bot | In bot.py::MainThread(16064), line 105 in __init__: Starting MusicBot release-151221-4-g59d47ef
+[0.9688940048217773] 2022-03-22 22:12:41,442 - INFO - musicbot.bot | In bot.py::MainThread(16064), line 111 in __init__: Loaded autoplaylist with 1 entries
+[1.6302788257598877] 2022-03-22 22:12:42,103 - DEBUG - musicbot.spotify | In spotify.py::MainThread(16064), line 100 in get_token: Created a new access token: {'access_token': 'BQAQrncLWwC1WJOU2_xnvSgUP3SYk-pPnkfKCVkjPk3I_AcaX-WsC-Mg3C5imHCy2rXfs-cv25BHm-ApBe0', 'token_type': 'Bearer', 'expires_in': 3600, 'expires_at': 1647972762}
+[1.6302788257598877] 2022-03-22 22:12:42,103 - INFO - musicbot.bot | In bot.py::MainThread(16064), line 145 in __init__: Authenticated with Spotify successfully using client ID and secret.
+[6.6574470996856689] 2022-03-22 22:12:47,130 - DEBUG - musicbot.bot | In bot.py::MainThread(16064), line 1119 in on_ready: Connection established, ready to go.
+[6.6584446430206299] 2022-03-22 22:12:47,131 - DEBUG - musicbot.bot | In bot.py::MainThread(16064), line 430 in _cache_app_info: Caching app info
+[7.6705782413482666] 2022-03-22 22:12:48,143 - DEBUG - musicbot.bot | In bot.py::MainThread(16064), line 924 in _scheck_ensure_env: Ensuring data folders exist
+[7.6715710163116455] 2022-03-22 22:12:48,144 - DEBUG - musicbot.bot | In bot.py::MainThread(16064), line 939 in _scheck_server_permissions: Checking server permissions
+[7.6715710163116455] 2022-03-22 22:12:48,144 - DEBUG - musicbot.bot | In bot.py::MainThread(16064), line 943 in _scheck_autoplaylist: Auditing autoplaylist
+[7.6715710163116455] 2022-03-22 22:12:48,144 - DEBUG - musicbot.bot | In bot.py::MainThread(16064), line 947 in _scheck_configs: Validating config
+[7.6715710163116455] 2022-03-22 22:12:48,144 - DEBUG - musicbot.config | In config.py::MainThread(16064), line 376 in async_validate: Validating options...
+[7.6715710163116455] 2022-03-22 22:12:48,144 - DEBUG - musicbot.config | In config.py::MainThread(16064), line 388 in async_validate: Acquired owner id via API
+[7.6715710163116455] 2022-03-22 22:12:48,144 - DEBUG - musicbot.bot | In bot.py::MainThread(16064), line 950 in _scheck_configs: Validating permissions config
+[7.6715710163116455] 2022-03-22 22:12:48,144 - DEBUG - musicbot.permissions | In permissions.py::MainThread(16064), line 112 in async_validate: Validating permissions...
+[7.6715710163116455] 2022-03-22 22:12:48,144 - DEBUG - musicbot.permissions | In permissions.py::MainThread(16064), line 116 in async_validate: Fixing automatic owner group
+[7.6715710163116455] 2022-03-22 22:12:48,144 - INFO - musicbot.bot | In bot.py::MainThread(16064), line 1133 in on_ready: Connected: 883403929113731072/BaguzelMusicBot#2949
+[7.6725668907165527] 2022-03-22 22:12:48,145 - INFO - musicbot.bot | In bot.py::MainThread(16064), line 1141 in on_ready: Owner:     743373378672656445/kintama#8473
 
-[17.4471249580383301] 2022-03-22 20:33:07,782 - INFO - musicbot.bot | In bot.py::MainThread(19360), line 1147 in on_ready: Guild List:
-[17.4471249580383301] 2022-03-22 20:33:07,782 - INFO - musicbot.bot | In bot.py::MainThread(19360), line 1151 in on_ready:  - META CLUB @theyoungsatoshi
-[17.4471249580383301] 2022-03-22 20:33:07,782 - INFO - musicbot.bot | In bot.py::MainThread(19360), line 1151 in on_ready:  - test server 2
-[17.4471249580383301] 2022-03-22 20:33:07,782 - INFO - musicbot.bot | In bot.py::MainThread(19360), line 1224 in on_ready: Not bound to any text channels
-[17.4627521038055420] 2022-03-22 20:33:07,798 - INFO - musicbot.bot | In bot.py::MainThread(19360), line 1260 in on_ready: Not autojoining any voice channels
-[141.9129514694213867] 2022-03-22 20:35:12,248 - INFO - musicbot.bot | In bot.py::MainThread(19360), line 3922 in on_message: 743373378672656445/kintama#8473: !help
-[209.8314771652221680] 2022-03-22 20:36:20,167 - ERROR - musicbot.bot | In bot.py::MainThread(19360), line 1084 in run: Error in cleanup
+[7.6735649108886719] 2022-03-22 22:12:48,146 - INFO - musicbot.bot | In bot.py::MainThread(16064), line 1147 in on_ready: Guild List:
+[7.6745622158050537] 2022-03-22 22:12:48,147 - INFO - musicbot.bot | In bot.py::MainThread(16064), line 1151 in on_ready:  - META CLUB @theyoungsatoshi
+[7.6755597591400146] 2022-03-22 22:12:48,148 - INFO - musicbot.bot | In bot.py::MainThread(16064), line 1151 in on_ready:  - test server 2
+[7.6783738136291504] 2022-03-22 22:12:48,151 - INFO - musicbot.bot | In bot.py::MainThread(16064), line 1224 in on_ready: Not bound to any text channels
+[7.6792798042297363] 2022-03-22 22:12:48,152 - INFO - musicbot.bot | In bot.py::MainThread(16064), line 1239 in on_ready: Autojoining voice channels:
+[7.6802778244018555] 2022-03-22 22:12:48,153 - INFO - musicbot.bot | In bot.py::MainThread(16064), line 1241 in <listcomp>:  - test server 2/General
+[7.6812736988067627] 2022-03-22 22:12:48,154 - INFO - musicbot.bot | In bot.py::MainThread(16064), line 351 in _join_startup_channels: Attempting to join test server 2/General
+[10.3643217086791992] 2022-03-22 22:12:50,837 - DEBUG - musicbot.bot | In bot.py::MainThread(16064), line 885 in deserialize_queue: Deserializing queue for 942138950838005790
+[10.5227863788604736] 2022-03-22 22:12:50,996 - DEBUG - musicbot.bot | In bot.py::MainThread(16064), line 520 in get_player: Created player via deserialization for guild 942138950838005790 with 4 entries
+[10.5227863788604736] 2022-03-22 22:12:50,996 - INFO - musicbot.bot | In bot.py::MainThread(16064), line 375 in _join_startup_channels: Joined test server 2/General
+[10.5237531661987305] 2022-03-22 22:12:50,997 - DEBUG - musicbot.entry | In entry.py::MainThread(16064), line 62 in get_ready_future: Created future for audio_cache\youtube-atELHQ1wZ1Y-Deftones_-_Deathblow_+_Lyrics.webm
+[10.5237531661987305] 2022-03-22 22:12:50,997 - DEBUG - musicbot.entry | In entry.py::MainThread(16064), line 62 in get_ready_future: Created future for audio_cache\youtube-atELHQ1wZ1Y-Deftones_-_Deathblow_+_Lyrics.webm
+[10.5237531661987305] 2022-03-22 22:12:50,997 - FFMPEG - musicbot.player | In player.py::MainThread(16064), line 324 in _play: Creating player with options: -nostdin -vn audio_cache\youtube-atELHQ1wZ1Y-Deftones_-_Deathblow_+_Lyrics.webm
+[11.3498094081878662] 2022-03-22 22:12:51,823 - DEBUG - musicbot.player | In player.py::MainThread(16064), line 341 in _play: Playing <musicbot.player.SourcePlaybackCounter object at 0x000001E65BCC63D0> using <discord.voice_client.VoiceClient object at 0x000001E65BCB54C0>
+[11.3518028259277344] 2022-03-22 22:12:51,825 - DEBUG - musicbot.bot | In bot.py::MainThread(16064), line 563 in on_player_play: Running on_player_play
+[11.3518028259277344] 2022-03-22 22:12:51,825 - DEBUG - musicbot.bot | In bot.py::MainThread(16064), line 859 in serialize_queue: Serializing queue for 942138950838005790
+[38.7722387313842773] 2022-03-22 22:13:19,245 - INFO - musicbot.bot | In bot.py::MainThread(16064), line 3922 in on_message: 743373378672656445/kintama#8473: !help
+[58.5956208705902100] 2022-03-22 22:13:39,069 - INFO - musicbot.bot | In bot.py::MainThread(16064), line 3922 in on_message: 743373378672656445/kintama#8473: !volume
+[65.3479452133178711] 2022-03-22 22:13:45,821 - INFO - musicbot.bot | In bot.py::MainThread(16064), line 3922 in on_message: 743373378672656445/kintama#8473: !volume 100
+[73.3424155712127686] 2022-03-22 22:13:53,815 - INFO - musicbot.bot | In bot.py::MainThread(16064), line 3922 in on_message: 743373378672656445/kintama#8473: !volume 60
+[85.8167803287506104] 2022-03-22 22:14:06,290 - ERROR - musicbot.bot | In bot.py::MainThread(16064), line 1084 in run: Error in cleanup
 Traceback (most recent call last):
   File "E:\discord bot\music-bot\MusicBot\musicbot\bot.py", line 1070, in run
     self.loop.run_until_complete(self.start(*self.config.auth))
